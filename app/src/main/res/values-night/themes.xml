@@ -2,11 +2,11 @@
     <!-- Base application theme. -->
     <style name="Theme.HexMap" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/gray_43</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/gray_43</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondary">@color/gray_127</item>
         <item name="colorSecondaryVariant">@color/gray_127</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->

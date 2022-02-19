@@ -1,64 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.MainActivity"
+    android:padding="5dp"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Block Size"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="101dp" />
-
-        <EditText
-            android:id="@+id/editTextNumber1"
+        <Button
+            android:id="@+id/infoButton"
+            android:fontFamily="@font/gowunbatang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
+            android:text="InfoActivity"
+            android:alpha="0"/>
 
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="85dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Map Size"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="179dp" />
-
-        <EditText
-            android:id="@+id/editTextNumber2"
+        <Button
+            android:id="@+id/button1"
+            android:fontFamily="@font/gowunbatang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="181dp" />
+            android:text="Create New Map" />
+
+        <Button
+            android:id="@+id/button2"
+            android:fontFamily="@font/gowunbatang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Saved Map" />
+
+        <Button
+            android:id="@+id/button3"
+            android:fontFamily="@font/gowunbatang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Map Code" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Map" />
+        app:srcCompat="@drawable/title" />
 
-
-</LinearLayout>
+</FrameLayout>

@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.HexActivity">
+    tools:context=".Activity.HexMapActivity">
+
+
+
 
     <com.example.hexmap.View.HexMapView
         android:id="@+id/hexmapview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/createbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create new Block"
+            android:fontFamily="@font/gowunbatang"/>
+
+        <Button
+            android:id="@+id/refactorbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change selected Block"
+            android:fontFamily="@font/gowunbatang"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/mapsavebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="?attr/actionModeCopyDrawable" />
+        <ImageButton
+            android:id="@+id/capturebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    </LinearLayout>
+
+</FrameLayout>
